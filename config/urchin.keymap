@@ -47,7 +47,7 @@
                     tapping-term-ms = <280>;
                     quick-tap-ms = <175>;
                     bindings = <&kp>, <&kp>;
-                    hold-trigger-key-positions = < 0 1 2 3 4>; // List of keys on the left side of the keyboard
+                    hold-trigger-key-positions = <0 1 2 3 4>; // List of keys on the left side of the keyboard
                     hold-trigger-on-release;
                 };
 		// Enables holding the first mod-tap key
