@@ -103,10 +103,10 @@
 		default_layer {
 			label = "Base";
 			bindings = <
-			&kp Q       &kp W       &kp E        &kp R         &kp T           &kp Y               &kp U         &kp I        &kp O         &kp P 
-			&hml LGUI A &hml LALT S &hml LCTRL D &hml LSHIFT F &kp G           &kp H               &hmr LSHIFT J &hmr LCTRL K &hmr LALT L   &hmr LGUI COLON
-			&kp Z       &kp X       &kp C        &kp V         &kp B           &kp N               &kp M         &kp COMMA    &kp DOT       &kp SQUOT
-                 		                             &mo LSHIFT    &mo SYM BSPC    &mo EXT ENTER       &mo LCTRL SPACE
+			&kp N1       &kp N2      &kp N3      &kp N4      &kp N5		&kp N6     &kp N7      &kp N8       &kp N9       &kp N0
+			&kp LESS  &kp USD  &kp LPAR &kp LBRC &kp LBKT    &kp EQL &kp QUES &kp SQUOT &kp MINUS &kp AST
+			&kp GREAT &kp PERC &kp RPAR &kp RBRC &kp RBKT 	&kp AT  &kp EXCL &kp DQUOT &kp PLUS  &kp FSLH
+							     &mo FNC     &mo SYM2       &trans &trans
 			>;
 		};
 	// Numbers and high frequency symbols
