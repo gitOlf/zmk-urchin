@@ -15,8 +15,7 @@
 #define EXT 2
 #define FNC 3
 #define SYM2 4
-#define ACCENT 5
-#define SETTINGS 6
+#define SETTINGS 5
 // -----------------
 
 &sk {
@@ -77,11 +76,6 @@
 	combos {
 		compatible = "zmk,combos";
 		// both right thumb keys
-		combo_accent {
-			timeout-ms = <200>;
-			key-positions = <32 33>;
-			bindings = <&mo ACCENT>;
-		};
 		// internal-left & external-right thumb keys
 		combo_sym2 {
 			timeout-ms = <200>;
@@ -120,8 +114,8 @@
 			label = "Sym.";
 			bindings = <
 			&kp N1       &kp N2      &kp N3      &kp N4      &kp N5		&kp N6     &kp N7      &kp N8       &kp N9       &kp N0
-			&kp IT_LESS  &kp IT_USD  &kp IT_LPAR &kp IT_LBRC &kp IT_LBKT    &kp IT_EQL &kp IT_QUES &kp IT_SQUOT &kp IT_MINUS &kp IT_AST
-			&kp IT_GREAT &kp IT_PERC &kp IT_RPAR &kp IT_RBRC &kp IT_RBKT 	&kp IT_AT  &kp IT_EXCL &kp IT_DQUOT &kp IT_PLUS  &kp IT_FSLH
+			&kp LESS  &kp USD  &kp LPAR &kp LBRC &kp LBKT    &kp EQL &kp QUES &kp SQUOT &kp MINUS &kp AST
+			&kp GREAT &kp PERC &kp RPAR &kp RBRC &kp RBKT 	&kp AT  &kp EXCL &kp DQUOT &kp PLUS  &kp FSLH
 							     &mo FNC     &mo SYM2       &trans &trans
 			>;
 		};
@@ -159,16 +153,6 @@
 			>;
 		};
 
-		// Used to type regional accents.
-		accent_layer {
-			label = "Accent";
-			bindings = <
-			&none &none &none &kp IT_CEGR &none                         &none &none &none &none &none 
-			&kp IT_AGRV &kp IT_IGRV &kp IT_OGRV &kp IT_EGRV &kp IT_EACU &none &none &none &none &none
-			&none &none &none &kp IT_UGRV &none                         &none &none &none &none &none
-									&none &none                         &none &none 
-			>;
-		};
 
 		// Used to change the keyboard's settings.
 		settings_layer {
