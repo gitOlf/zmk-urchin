@@ -12,6 +12,8 @@
 // Layer definitions
 #define BASE 0
 #define SYM 1
+#define SYM 2
+#define FNC 3 
 #define SETTINGS 2
 // -----------------
 
@@ -53,6 +55,11 @@
 			key-positions = <30 31>;
 			bindings = <&mo SETTINGS>;
 		};
+		combo_sym2 {
+			timeout-ms = <200>;
+			key-positions = <31 33>;
+			bindings = <&mo SYM2>;
+		};
 	};
 
 	keymap {
@@ -73,9 +80,36 @@
                         &kp N1        &kp N2           &kp N3           &kp N4           &kp N5           &kp N6    &kp N7            &kp N8         &kp N9         &kp N0
                         &hml LGUI LT  &hml LALT PRCNT  &hml LCTRL LPAR  &hml LSHIFT LBRC &kp LBKT         &kp EQUAL &hmr LSHIFT QMARK &hmr LCTRL SQT &hmr LALT PLUS &hmr LGUI ASTRK
                         &kp GT        &kp DLLR         &kp RPAR         &kp RBRC         &kp RBKT         &kp AT    &kp EXCL          &kp DQT         &kp MINUS      &kp FSLH
-                                                                        &kp LSHIFT       &trans           &trans    &trans
+                                                                        &kp LSHIFT       &trans           &trans    &mo FNC
                         >;
                 };
+                sym_2_layer {
+			label = "Sym.2";
+			bindings = <
+			&kp CARET &kp UNDER &kp &none &kp EUR  &kp HASH         &none &none &none &none &none 
+			&kp GRAVE &kp TILDE &kp BSLH  &kp PIPE &kp AMPS         &none &none &none &none &none
+			&none     &none     &none     &none    &none            &none &none &none &none &none 
+                                                      &trans   &trans           &trans &trans
+			>;
+		};
+                nav_layer {
+			label = "Nav";
+			bindings = <
+			&none    &none    &none      &none      &none          &none    &none    &none  &none     &none 
+	                &kp LGUI &kp LALT &kp LCTRL  &kp LSHIFT &none          &kp LEFT &kp down &kp up &kp right &none
+			&none    &none    &none      &none      &none          &none    &none    &none  &none     &none
+                                                     &trans     &trans         &trans   &trans
+			>;
+		};
+               	fnc_layer {
+			label = "FRow";
+			bindings = <
+			&kp F1   &kp F2   &kp F3     &kp F4     &kp F5       &kp F6  &kp F7   &kp F8          &kp F9 &kp F10 
+			&kp LGUI &kp LALT &kp LCTRL  &kp LSHIFT &none        &kp F11 &kp F12  &kp PRINTSCREEN &trans &trans
+			&none    &none    &none      &none      &none	     &none   &none    &none           &none  &none 
+						     &none      &none        &none   &none  
+			>;
+		};
                 settings_layer {
                         label = "Sett.";
                         bindings = <
