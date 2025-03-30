@@ -62,7 +62,7 @@
                         bindings = <
                         &kp N1        &kp N2           &kp N3           &kp N4           &kp N5           &kp N6    &kp N7            &kp N8         &kp N9         &kp N0
                         &hml LGUI LT  &hml LALT PRCNT  &hml LCTRL LPAR  &hml LSHIFT LBRC &kp LBKT         &kp EQUAL &hmr LSHIFT QMARK &hmr LCTRL SQT &hmr LALT PLUS &hmr LGUI ASTRK
-                        &kp GT        &kp DLLR         &kp RPAR         &kp RBRC         &kp RBKT         &kp AT    &kp EXCL          &kp DQUOT      &kp MINUS      &kp FSLH
+                        &kp GT        &kp DLLR         &kp RPAR         &kp RBRC         &kp RBKT         &kp AT    &kp EXCL          &kp DQT         &kp MINUS      &kp FSLH
                                                                         &kp LSHIFT       &trans           &trans    &trans
                         >;
                 };
