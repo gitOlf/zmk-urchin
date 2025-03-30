@@ -12,9 +12,9 @@
 // Layer definitions
 #define BASE 0
 #define SYM 1
-#define SYM 2
+#define SYM2 2
 #define FNC 3 
-#define SETTINGS 2
+#define SETTINGS 4
 // -----------------
 
 &sk {
