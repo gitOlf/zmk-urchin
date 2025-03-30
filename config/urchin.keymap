@@ -24,6 +24,14 @@
 	ignore-modifiers;
 };
 
+&mt {
+    quick-tap-ms = <150>;
+};
+
+&lt {
+    quick-tap-ms = <150>;
+};
+
 / {
 	behaviors {
                 hml: home_row_mod_left {
