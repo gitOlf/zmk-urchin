@@ -17,6 +17,8 @@
 #define SETTINGS 4
 // -----------------
 
+#define MY_EUR RA(E)             // € 
+
 &sk {
 	// don't release mods on other mods presses
 	ignore-modifiers;
@@ -86,10 +88,10 @@
                 sym_2_layer {
 			label = "Sym.2";
 			bindings = <
-			&kp CARET &kp UNDER &kp &none &none    &kp HASH         &none  &none &none &none &none 
-			&kp GRAVE &kp TILDE &kp BSLH  &kp PIPE &kp AMPS         &none  &none &none &none &none
-			&none     &none     &none     &none    &none            &none  &none &none &none &none 
-                                                      &trans   &trans           &trans &trans
+			&kp CARET &kp UNDER &kp MY_EUR &none    &none            &none  &none &none &none &none 
+			&kp GRAVE &kp TILDE &kp BSLH   &kp PIPE &kp AMPS         &none  &none &none &none &none
+			&none     &none     &none      &none    &none            &none  &none &none &none &none 
+                                                       &trans   &trans           &trans &trans
 			>;
 		};
                 nav_layer {
