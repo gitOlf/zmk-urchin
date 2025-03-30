@@ -26,11 +26,11 @@
 };
 
 &mt {
-    quick-tap-ms = <150>;
+    quick-tap-ms = <300>;
 };
 
 &lt {
-    quick-tap-ms = <150>;
+    quick-tap-ms = <300>;
 };
 
 / {
@@ -91,7 +91,7 @@
                         &kp N1        &kp N2           &kp N3           &kp N4           &kp N5           &kp N6    &kp N7            &kp N8         &kp N9         &kp N0
                         &hml LGUI LT  &hml LALT PRCNT  &hml LCTRL LPAR  &hml LSHIFT LBRC &kp LBKT         &kp EQUAL &hmr LSHIFT QMARK &hmr LCTRL SQT &hmr LALT PLUS &hmr LGUI ASTRK
                         &kp GT        &kp DLLR         &kp RPAR         &kp RBRC         &kp RBKT         &kp AT    &kp EXCL          &kp DQT         &kp MINUS      &kp FSLH
-                                                                        &kp LSHIFT       &trans           &trans    &mo FNC
+                                                                        &kp LSHIFT       &trans           &kp ESC   &lt FNC TAB
                         >;
                 };
                 sym_2_layer {
@@ -106,10 +106,10 @@
                 nav_layer {
 			label = "Nav";
 			bindings = <
-			&none    &none    &none      &none      &none          &none    &none    &none  &none     &none 
-	                &kp LGUI &kp LALT &kp LCTRL  &kp LSHIFT &none          &kp LEFT &kp DOWN &kp UP &kp RIGHT &none
-			&none    &none    &none      &none      &none          &none    &none    &none  &none     &none
-                                                     &trans     &trans         &trans   &trans
+			&none    &none    &none      &none      &none          &none    &none    &kp UP   &none     &none 
+	                &kp LGUI &kp LALT &kp LCTRL  &kp LSHIFT &none          &none    &kp LEFT &kp DOWN &kp RIGHT &none
+			&none    &none    &none      &none      &none          &none    &none    &none   0none     &none
+                                                     &trans     &kp DEL        &trans   &trans
 			>;
 		};
                	fnc_layer {
